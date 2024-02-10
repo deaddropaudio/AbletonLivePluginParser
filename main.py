@@ -187,6 +187,11 @@ def parse_projects(temp_dir: Path) -> dict[str, int]:
         for elem in root.findall('.//PluginDesc/AuPluginInfo/Name'):
             plugin_name = elem.get("Value")
             plugins[plugin_name] = plugins.get(plugin_name, 0) + 1
+
+        for elem in root.findall('.//PluginDesc/Vst3PluginInfo/Name'):
+            plugin_name = elem.get("Value")
+            plugins[plugin_name] = plugins.get(plugin_name, 0) + 1
+            
     return plugins
 
 def create_report(plugins: dict[str, int], threshold: int, projects: list[Path] = None, show_processed_projects: bool = False) -> str:
@@ -203,7 +208,7 @@ def create_report(plugins: dict[str, int], threshold: int, projects: list[Path] 
         md_content += "\n## Used Less Often\n" + "\n".join(f"- {plugin}: {plugins[plugin]} times" for plugin in used_less_often)
 
     if show_processed_projects and projects:
-        md_content += "## Processed Projects\n" + "\n".join(f"- {project}" for project in projects) + "\n\n"
+        md_content += "\n\n## Processed Projects\n" + "\n".join(f"- {project}" for project in projects) + "\n\n"
 
     return md_content
 
