@@ -1,5 +1,5 @@
 venv/*
-/*.md
+/plugins_report*.md
 projects/*
 .DS_Store
 settings.json
