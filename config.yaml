@@ -1,0 +1,4 @@
+cleanup_temp: true
+project_dir: ./projects
+show_processed_projects: true
+threshold: 5
