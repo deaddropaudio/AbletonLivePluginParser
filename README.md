@@ -1,4 +1,5 @@
 # Ableton Live Projects - Plugin Statistics
+<blockquote>Are you a plugin hoarder? Do you plan to finally minimalize your project setup with only a bespoke selection of your favorite plugins? Look no further and get ready to ask the question "Does CLA Vocals really spark joy?".</blockquote>
 
 This application is designed to help music producers and sound engineers analyze the use of plugins within Ableton Live Set (.als) files. It provides an easy-to-use graphical interface for selecting specific projects or folders, generating a report on plugin usage across selected Ableton Live Sets.
 
