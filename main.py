@@ -8,7 +8,6 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 import shutil
 from pathlib import Path
-import os
 
 class ConfigManager:
     def __init__(self, config_path="config.yaml"):
