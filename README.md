@@ -43,3 +43,4 @@ The application uses a config.yaml file to store settings. You can edit this fil
 
 ## Note
 This tool is designed to read and analyze .als files without modifying the original projects. Always ensure you have backups of your projects before using any third-party tools. I take no responsibility for any loss of data. <3 
+Also this way developed on MacOS, so it might have weird side effects on Windows. If you'd like to change something, feel very free and welcome to create a pull request :)
